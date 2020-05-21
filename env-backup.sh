@@ -10,7 +10,7 @@ cd ~
 cd -
 
 cd /mnt/c/Users/$WINDOWS_USER_FOLDER/AppData/Roaming/
-  tar -zcvf $DOT_SCRIPTS_FOLDER/config/Hyper.tar.gz Hyper/.hyper.js
+  tar -zcvf $DOT_SCRIPTS_FOLDER/config/hyper.tar.gz Hyper/.hyper.js
 cd -
 
 cp ~/.bashrc config/
@@ -24,7 +24,7 @@ cp ~/.config/yarn/global/package.json config/yarn-package.json
 read -p "Save the backup on github? [y/n] " SAVE_ON_GIT
 
 case $SAVE_ON_GIT in
-  'y') echo "Saving on Github"; git add .; git commit -m "$(date +'%Y/%m/%d %H:%M') Updating Saved Configs"; git push -u --force origin master;;
+  'y') echo "Saving on Github"; git add config/.; git commit -m "[$(date +'%Y/%m/%d %H:%M')] Updating Saved Configs"; git push -u --force origin master;;
   'n') echo "Okay, backup complete at $(date +'%Y/%m/%d %H:%M')";;
   *) echo "Sorry, $SAVE_ON_GIT isn't recognized (doing nothing)";;
 esac
