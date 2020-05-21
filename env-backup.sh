@@ -16,7 +16,7 @@ cd -
 cp ~/.bashrc config/
 cp ~/.profile config/
 cp ~/.zshrc config/
-cp ~/.gitconfig config/
+#cp ~/.gitconfig config/
 
 cp ~/.oh-my-zsh/themes/dieter.zsh-theme config/
 cp ~/.config/yarn/global/package.json config/yarn-package.json

@@ -14,7 +14,7 @@ echo "$PREFIX UPDATING .DOT-FILES"
 cp config/.bashrc ~/.
 cp config/.profile ~/.
 cp config/.zshrc ~/.
-cp config/.gitconfig ~/.
+#cp config/.gitconfig ~/.
 
 echo "$PREFIX UPDATING ZSH-THEME"
 cp config/dieter.zsh-theme ~/.oh-my-zsh/themes/

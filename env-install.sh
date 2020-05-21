@@ -43,7 +43,7 @@ echo "$PREFIX MOVING .DOT-FILES TO FOLDERS"
 cp config/.bashrc ~/.
 cp config/.profile ~/.
 cp config/.zshrc ~/.
-cp config/.gitconfig ~/.
+#cp config/.gitconfig ~/.
 cp config/dieter.zsh-theme ~/.oh-my-zsh/themes/
 cp config/yarn-package.json ~/.config/yarn/global/package.json
 
