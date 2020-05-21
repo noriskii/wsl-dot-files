@@ -21,11 +21,11 @@ cp ~/.gitconfig config/
 cp ~/.oh-my-zsh/themes/dieter.zsh-theme config/
 cp ~/.config/yarn/global/package.json config/yarn-package.json
 
-read -p "Save the backup on githut? [y/n]" SAVE_ON_GIT
+read -p "Save the backup on github? [y/n] " SAVE_ON_GIT
 
 case $SAVE_ON_GIT in
-  'y') echo "Saving on Github"; git add .; git commit -m "$(date +'%Y/%m/%d %H:%M') Updating Saved Configs"; git push -u --force origin/master;
-  'n') echo "Okay, backup complete at $(date +'%Y/%m/%d %H:%M')";
-  *) echo "Sorry, $SAVE_ON_GIT isn't recognized (doing nothing);
+  'y') echo "Saving on Github"; git add .; git commit -m "$(date +'%Y/%m/%d %H:%M') Updating Saved Configs"; git push -u --force origin master;;
+  'n') echo "Okay, backup complete at $(date +'%Y/%m/%d %H:%M')";;
+  *) echo "Sorry, $SAVE_ON_GIT isn't recognized (doing nothing)";;
 esac
 
