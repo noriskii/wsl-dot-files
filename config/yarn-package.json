@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "create-react-app": "^3.3.1",
+    "expo-cli": "^3.11.9",
+    "gatsby-cli": "^2.8.29",
+    "localtunnel": "^2.0.0",
+    "nodemon": "^2.0.2",
+    "now": "^16.7.3",
+    "react-native-cli": "^2.0.1"
+  }
+}

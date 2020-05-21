@@ -1,0 +1,8 @@
+[user]
+	name = Lucas Augusto Silva
+	email = luckaugusto@gmail.com
+[core]
+	excludesfile = /home/lucks/.gitignore
+	editor = vim
+[credential]
+	helper = cache
